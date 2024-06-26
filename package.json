@@ -11,6 +11,8 @@
     "lint": "next lint --fix"
   },
   "dependencies": {
+    "@eslint/config-array": "^0.16.0",
+    "@eslint/object-schema": "^2.1.4",
     "@tanstack/react-query": "^4.24.4",
     "@wix/bookings": "^1.0.136",
     "@wix/members": "^1.0.38",
