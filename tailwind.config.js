@@ -53,7 +53,7 @@ module.exports = {
       },
       colors: {
         'gray-c1': 'rgb(4,4,4)',
-        'gray-c2': 'rgb(203,156,84)',
+        'gray-c2': 'rgb(4,4,4)',
         highlight: 'rgb(203,156,84)',
       },
       gridTemplateColumns: {
