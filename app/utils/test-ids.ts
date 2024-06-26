@@ -1,6 +1,6 @@
 const ids = {
   LAYOUT: {
-    HEADER: 'page.header',
+    zHEADER: 'page.header',
     FOOTER: 'page.footer',
   },
   HOME_PAGE: {

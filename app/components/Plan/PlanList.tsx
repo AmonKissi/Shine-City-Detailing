@@ -117,17 +117,16 @@ export default function PlansList({
         </div>
       ) : (
         <div className="text-center">
-          No plans are offered at the moment. Click{' '}
+          Thanks for choosing us. Click{' '}
           <a
-            href="https://manage.wix.com/account/site-selector?actionUrl=https%3A%2F%2Fmanage.wix.com%2Fdashboard%2F%7BmetaSiteId%7D%2Fpricing-plans%3FreferralInfo%3DHeadless"
+            href="https://shine-city-auto-detailing.square.site/"
             target="_blank"
             rel="noreferrer"
             className="text-highlight"
           >
-            here
+            Here
           </a>{' '}
-          to go to the business dashboard to add plans. Once added, they will
-          appear here.
+          to access our service menu in order to book appointments.
         </div>
       )}
     </div>

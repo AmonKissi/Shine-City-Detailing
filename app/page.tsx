@@ -91,82 +91,73 @@ export default async function Home() {
   return (
     <div>
       <div
-        className="text-center min-h-screen bg-[url('/home/fitness-background-1.jpg')] parallax-background"
+        className="text-center min-h-screen bg-[url('/home/bcover.png')] parallax-background"
         data-testid={testIds.HOME_PAGE.HEADER}
       >
         <section className="py-[355px]">
-          <h1 className="tracking-widest">Joey Dixon</h1>
+          <h1 className="tracking-widest">SHINE CITY</h1>
           <div className="pt-7">
             <div className="tracking-[.4em] text-3xl uppercase">
-              Training with a World Champion
+              Experience automotive opulence like never before
             </div>
           </div>
           <div className="pt-14 flex gap-8 justify-center">
             <a
-              className="btn-secondary text-lg px-7"
-              href="/classes-schedule"
+              className="btn-third text-lg px-7"
+              href="https://shine-city-auto-detailing.square.site/"
               data-testid={testIds.HOME_PAGE.BOOK_CLASS_CTA}
             >
               Book Now
             </a>
             <a
-              className="btn-main text-lg px-7"
-              href="/plans"
+              className="btn-third text-lg px-7"
+              href="tel:+14694278162"
               data-testid={testIds.HOME_PAGE.BOOK_PLAN_CTA}
             >
-              Membership
+              Call Now
             </a>
           </div>
         </section>
-        <section className="flex flex-col sm:flex-row pt-1 pb-7 bg-gray-c1 cursor-pointer">
+        <section className="flex flex-col sm:flex-row pt-1 pb-7 bg-gray-c2 cursor-pointer">
           <TrainingOptionSelection
-            href="/training"
-            text="Beginners"
+            href="https://www.instagram.com/shinecity_autodetailing/"
+            text="Instagram"
             className="sm:justify-end"
-            bgImageSrc="bg-[url('/home/beginners.jpg')]"
+            bgImageSrc="bg-[url('/home/bcover3.png')]"
           />
           <TrainingOptionSelection
-            href="/training"
-            text="Professionals"
+            href="https://www.facebook.com/shinecity.autodetailing/"
+            text="Facebook"
             className="sm:justify-start"
-            bgImageSrc="bg-[url('/home/professionals.jpg')]"
+            bgImageSrc="bg-[url('/home/bcover4.jpeg')]"
           />
         </section>
       </div>
       <ScrollIntoView hashName="#about" offset="-90px" />
-      <div className="min-h-screen bg-[url('/home/fitness-background-2.jpg')] parallax-background">
+      <div className="min-h-screen bg-[url('/home/bcover6.png')] parallax-background">
         <div className="max-w-full-content mx-auto box-content pt-2">
           <div className="max-w-[400px] pt-10 pb-2">
-            <h2 className="uppercase text-7xl leading-tight py-7">
-              Meet The Coach
-            </h2>
+            <h2 className="uppercase text-7xl leading-tight py-7">ABOUT US</h2>
             <section className="font-open-sans-condensed text-base text-stone-300 tracking-wider">
               <p className="py-3">
-                {`Hi, I’m Joey Dixon and I’m a boxing coach with 15 years of boxing experience and 9 intercontinental cruiserweight titles. 
-                I’ve trained many successful boxers at national and international levels. I love teaching people how to box like a pro,
-                whether they are beginners or advanced fighters.
+                {`Welcome to Shine City Auto Detailing, your premier choice for auto detailing services in Dallas, TX. We understand that your vehicle is more than just a mode of transportation—it's a vital part of your daily life. Over time, dirt, grime, and environmental elements can diminish its beauty and performance. That's where we come in.
                 `}
               </p>
               <p className="py-3">
-                {`To me, boxing is not only a sport, but also a way of life.
-                It teaches you discipline, resilience, confidence, and self-defense. It also keeps you fit, healthy, and mentally sharp.
-                That’s why I created this business to share my knowledge and skills with you.`}
+                {`At Shine City Auto Detailing, we are passionate about cars. Our mission is to restore your vehicle to its original showroom shine, inside and out. Whether you need auto detailing, exterior detailing to bring back that glossy finish, or complete interior detailing for a fresh and immaculate cabin, we've got you covered.`}
               </p>
               <p className="py-3">
-                {`I have a friendly and supportive approach that will make you feel comfortable and motivated.
-                I also have a wealth of experience and expertise that will make you learn faster and better.
-                No matter what your age, level, or background, I can help you become the best boxer you can be.`}
+                {`We are a mobile service, bringing our expertise right to your doorstep. Whether you're at home or work, we'll accommodate your schedule with appointments that suit you best. Our commitment to quality and customer satisfaction means we go above and beyond to ensure every vehicle leaves looking flawless.`}
               </p>
               <p className="py-3">
-                {`If you are interested in working with me or learning more about me, please feel free to contact me or browse through my website.
-                I look forward to hearing from you and helping you on your boxing journey.`}
+                {`Ready to give your car the treatment it deserves? Book your appointment with Shine City Auto Detailing now and experience the difference. Your car will thank you!`}
               </p>
             </section>
             <section className="mt-5">
               <ul aria-label="Social Bar" className="flex gap-2 invert -ml-3">
                 <li>
                   <a
-                    href="http://www.facebook.com/wix"
+                    href="https://www.facebook.com/shinecity.autodetailing/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -179,11 +170,7 @@ export default async function Home() {
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="http://www.twitter.com/wix"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
+                  <a href="#" target="_blank" rel="noreferrer">
                     <Image
                       width={43}
                       height={43}
@@ -194,7 +181,7 @@ export default async function Home() {
                 </li>
                 <li>
                   <a
-                    href="https://instagram.com/wix/"
+                    href="https://www.instagram.com/shinecity_autodetailing/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -207,44 +194,55 @@ export default async function Home() {
                   </a>
                 </li>
               </ul>
+              {/* <div className="fixed right-0 top-0 bottom-0 flex justify-center items-center lg:w-1/3 lg:pr-5">
+                <div className="max-w-[150px]">
+                  <video controls width="100%" height="auto">
+                    <source src="/home/shine.MOV" type="video/quicktime" />
+                    <source src="/home/shine.MOV" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div> */}
             </section>
           </div>
         </div>
+        {/* <div className="fixed right-0 top-0 bottom-0 flex justify-center items-center lg:w-1/3 lg:pr-5">
+          <div>OPEN</div>
+          <div></div>
+          <br></br>
+          <div></div>
+          <div>CLOSE</div>
+          <div className="max-w-[400px]">
+            <video controls width="100%" height="auto">
+              <source src="/home/shine.MOV" type="video/quicktime" />
+              <source src="/home/shine.MOV" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div> */}
         <section className="bg-[url('/home/coacher-achievements-background.jpg')] bg-center bg-cover">
           <div className="max-w-full-content px-4 mx-auto text-black">
             <h2 className="title pt-24 pb-20 tracking-[.3em] text-center">
-              My Experience
+              Our Reviews
             </h2>
-            <ul className="grid grid-cols-2 lg:grid-cols-4 gap-16 pb-20 px-2">
-              <AchievementItem
-                title="15"
-                tagline="15 YEARS OF BOXING EXPERIENCE"
-              />
-              <AchievementItem
-                title="3"
-                tagline="3 TIMES WBA INTERCONTINENTAL CRUISERWEIGHT"
-              />
-              <AchievementItem
-                title="4"
-                tagline="4 TIMES WBC INTERCONTINENTAL CRUISERWEIGHT"
-              />
-              <AchievementItem
-                title="2"
-                tagline="2 TIMES IBF INTERCONTINENTAL CRUISERWEIGHT"
-              />
-            </ul>
+            <div className="pb-20 px-2">
+              {/* EmbedReviews Widget */}
+              {/* <script src="https://cdn.embedsocial.com/embedscript/google.js"></script> */}
+              <div
+                className="embedsocial-reviews"
+                data-ref="YOUR_UNIQUE_WIDGET_ID"
+              ></div>
+            </div>
           </div>
         </section>
         <section className="bg-gray-c2">
           <div className="max-w-full-content px-4 mx-auto py-20 flex flex-col gap-10 items-center">
-            <h3 className="text-3xl uppercase tracking-[.4em] pt-7">
-              Start Training Today
-            </h3>
+            <h3 className="text-3xl uppercase tracking-[.4em] pt-7">Gallery</h3>
             <a
               className="btn-secondary px-10 text-lg px-7"
-              href="/classes-schedule"
+              href="https://shinecitydetailing.pixieset.com/autodetailing/"
             >
-              Book a Session
+              View Now
             </a>
           </div>
         </section>
@@ -255,25 +253,24 @@ export default async function Home() {
         </section>
       </div>
       <ScrollIntoView hashName="#studio" offset="-90px" />
-      <div className="text-center py-24 bg-[url('/home/fitness-background-3.jpg')] parallax-background">
+      <div className="text-center py-24 bg-[url('/home/SCD/25.jpeg')] parallax-background">
         <div className="mx-auto max-w-md px-2">
-          <h2 className="title tracking-widest">THE STUDIO</h2>
+          <h2 className="title tracking-widest">Shine City Detailing</h2>
           <div className="pt-7 font-open-sans-condensed text-lg text-stone-300">
-            {`We train in a modern and spacious facility, conveniently located in the heart of San Francisco.
-            We have the equipment, facilities and expertise to take on clients of all ages and experience levels. Come by and check us out!`}
+            {`offers top-tier auto detailing services in the Dallas/Fort Worth (DFW) area, specializing in rejuvenating and enhancing the appearance of your vehicle.`}
           </div>
           <section className="text-center uppercase pt-24 text-stone-200">
             <h4 className="text-3xl tracking-[.4em]">Address</h4>
             <div className="pt-6">
-              <div className="text-2xl">500 Terry A Francois Blvd</div>
-              <div className="text-lg">San Francisco, CA 94158, USA</div>
+              <div className="text-2xl">Dallas</div>
+              <div className="text-lg">Fort Worth</div>
             </div>
           </section>
           <section className="text-center uppercase pt-20 text-stone-200">
             <h4 className="text-3xl tracking-[.4em]">Hours</h4>
             <div className="text-2xl pt-6">
               <div>Monday - Friday</div>
-              <div>6:30AM - 7:00PM</div>
+              <div>8:00AM - 10:00PM</div>
             </div>
           </section>
         </div>

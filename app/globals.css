@@ -49,6 +49,13 @@
     @apply hover:text-gray-c1;
   }
 
+  .btn-third {
+    @apply text-white;
+    @apply bg-black;
+    @apply hover:bg-highlight;
+    @apply hover:text-gray-c1;
+  }
+
   .btn-main {
     @apply text-gray-c1;
     @apply bg-highlight;

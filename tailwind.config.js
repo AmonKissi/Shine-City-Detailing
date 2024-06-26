@@ -52,9 +52,9 @@ module.exports = {
         ...widthExtension,
       },
       colors: {
-        'gray-c1': 'rgb(37,33,40)',
-        'gray-c2': 'rgb(47,43,50)',
-        highlight: 'rgb(257, 97, 72)',
+        'gray-c1': 'rgb(4,4,4)',
+        'gray-c2': 'rgb(203,156,84)',
+        highlight: 'rgb(203,156,84)',
       },
       gridTemplateColumns: {
         'auto-sm': 'repeat(auto-fill,minmax(120px,1fr))',

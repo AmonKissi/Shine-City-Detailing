@@ -4,19 +4,25 @@ import type { LinkProps } from 'next/link';
 import { usePathname } from 'next/navigation';
 import Login from '@app/components/Login/Login';
 import { StyledNavLink } from '@app/components/Layout/NavBar/NavLink';
+import Image from 'next/image';
+import logo from './logo-white.png';
 
 const navbarItems = [
   { scroll: true, ref: '/', label: 'Home' },
   { scroll: false, ref: '/#about', label: 'About' },
-  { scroll: false, ref: '/#studio', label: 'The Studio' },
-  { scroll: true, ref: '/training', label: 'Training' },
-  { scroll: true, ref: '/classes-schedule', label: 'Book Online' },
+  // { scroll: false, ref: '/#studio', label: 'The Studio' },
+  // { scroll: true, ref: '/training', label: 'Training' },
+  {
+    scroll: true,
+    ref: 'https://shinecitydetailing.pixieset.com/autodetailing',
+    label: 'Gallery',
+  },
   { scroll: true, ref: '/plans', label: 'Plans & Pricing' },
   { scroll: false, ref: '/#contact', label: 'Contact' },
   {
     scroll: true,
-    ref: '/account/my-account',
-    label: 'My Account',
+    ref: 'https://g.co/kgs/nR7NgU6',
+    label: 'Reviews',
     prefetch: false,
   },
 ];
@@ -31,6 +37,7 @@ export function NavBar() {
   );
   return (
     <>
+      <Image src={logo} alt="Logo" width={100} height={100} />
       <button
         className="block md:hidden absolute right-8 top-6 z-50"
         onClick={toggleOpen}
@@ -79,7 +86,7 @@ export function NavBar() {
           ))}
           <li className="order-first md:order-last justify-end grow">
             <div className="flex flex-nowrap text-highlight gap-2 sm:justify-end justify-center items-center">
-              <Login onActionClick={() => setIsMenuShown(false)} />
+              {/* <Login onActionClick={() => setIsMenuShown(false)} /> */}
             </div>
           </li>
         </ul>
